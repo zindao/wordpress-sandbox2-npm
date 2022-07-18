@@ -1,0 +1,4 @@
+#.browserslistrc
+# Browsers that we support
+> 0.25%
+not dead
