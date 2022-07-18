@@ -70,7 +70,7 @@ const server = browserSync.create();
 export const serve = done => {
 	server.init({
 		// put your local website link here:
-		proxy: "http://localhost:8888/wordpress-play/" 
+		proxy: "http://localhost:8888/wordpress-play2-npm/" 
 	});
 	done();
 };
