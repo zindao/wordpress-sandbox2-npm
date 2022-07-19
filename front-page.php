@@ -6,7 +6,7 @@
     <div class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-xxxl-2">
+                <div class="col">
                     <h1>Hello there</h1>
 
                     <input type="button" value="blue" class="btn btn-primary">
