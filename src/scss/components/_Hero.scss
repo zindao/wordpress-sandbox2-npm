@@ -1,0 +1,11 @@
+// _Hero.scss
+
+
+.Hero {
+    background: red;
+
+    @include media-breakpoint-up(xxxl) { 
+        background: blue;
+    }
+
+}
