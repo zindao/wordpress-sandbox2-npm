@@ -1,7 +1,7 @@
 import { src, dest, watch, series, parallel } from 'gulp';
 import yargs from 'yargs';
 import sass from 'gulp-sass';
-import cleanCss from 'gulp-clean-css';
+import cleanCSS from 'gulp-clean-css';
 import gulpif from 'gulp-if';
 import postcss from 'gulp-postcss';
 import sourcemaps from 'gulp-sourcemaps';
@@ -20,12 +20,14 @@ export const compileStyles = () => {
     // add vendor profixes
     .pipe(gulpif(PRODUCTION, postcss([ autoprefixer ])))
     // minify the file
-    .pipe(gulpif(PRODUCTION, cleanCss({compatibility:'ie8'})))
+    .pipe(gulpif(PRODUCTION, cleanCSS({compatibility:'ie8'})))
     // add source maps
     .pipe(gulpif(!PRODUCTION, sourcemaps.write()))
 	// pipe to the destination folder
     .pipe(dest('dist/css'));
 }
+
+
 
 export const copyFiles = () =>{
   return src([
